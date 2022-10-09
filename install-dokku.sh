@@ -1,15 +1,15 @@
 # /bin/sh
-if [ -z "$1" ]
-  then
-    echo Required domain example www.customer.es
-    exit 1
-fi
+# if [ -z "$1" ]
+#   then
+#     echo "Required domain example www.customer.es"
+#     exit 1
+# fi
 
-if [ -z "$2" ]
-  then
-    echo "Required letsencrypt email, examp yourfancyemail@gmail.com"
-    exit 1
-fi
+# if [ -z "$2" ]
+#   then
+#     echo "Required letsencrypt email, examp yourfancyemail@gmail.com"
+#     exit 1
+# fi
 NO_FORMAT="\033[0m"
 C_SPRINGGREEN2="\033[38;5;47m"
 C_STEELBLUE1="\033[38;5;75m"

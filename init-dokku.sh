@@ -33,6 +33,6 @@ echo "${C_SPRINGGREEN2} Domain running great!${NO_FORMAT}"
 echo "5. Adding letsencrypt plugin:"
 sudo dokku plugin:install https://github.com/dokku/dokku-letsencrypt.git
 echo "6. Setting letsencrypt email to ${2}"
-dokku config:set --global DOKKU_LETSENCRYPT_EMAIL=emaildelclient@dominiodelcliente.com
+dokku config:set --global DOKKU_LETSENCRYPT_EMAIL=$2
 dokku letsencrypt:cron-job --add
 echo "Summary: ${C_STEELBLUE1}https://$1 ${NO_FORMAT}encrypted with letsencrypt(${C_STEELBLUE1}$2${NO_FORMAT})"

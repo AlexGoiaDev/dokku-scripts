@@ -19,7 +19,7 @@ echo "${C_STEELBLUE1}DOMAIN:${NO_FORMAT} $1"
 echo "${C_STEELBLUE1}EMAIL (letsencrypt):${NO_FORMAT} $2"
 echo "Initial server settings with Dokku"
 echo "1. Obtaining bash..."
-wget https://raw.githubusercontent.com/dokku/dokku/v0.28.1/bootstrap.sh
+wget -O bootstrap.sh https://raw.githubusercontent.com/dokku/dokku/v0.28.1/bootstrap.sh
 echo "${C_SPRINGGREEN2}OK, i got that bash :P${NO_FORMAT}"
 echo "2. Executing bash:"
 sudo DOKKU_TAG=v0.28.1 bash bootstrap.sh

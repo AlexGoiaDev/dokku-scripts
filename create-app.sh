@@ -24,12 +24,13 @@ echo "${C_STEELBLUE1}EMAIL (letsencrypt):${NO_FORMAT} $2"
 echo "1. Obtaining bash..."
 echo "2. Executing bash:"
 echo "3. Creating app..."
-# dokku apps:create $1
+dokku apps:create $1
 echo "4. Setting domain to app..."
-# dokku domains:set $1 $2
+dokku domains:set $1 $2
 echo "5. Adding SSL to app..."
-# dokku letsencrypt:true $1
+dokku letsencrypt:true $1
 echo "6. Auto renew SSL...:"
-# dokku letsencrypt:cron-job --add
-echo "7. Set production"
-# dokku config:set nombre_de_la_app NODE_ENV=production
+dokku letsencrypt:cron-job --add
+# only for node apps
+echo "7. Setting NODE_ENV=production"
+dokku config:set $1 NODE_ENV=production

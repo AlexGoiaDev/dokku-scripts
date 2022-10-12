@@ -28,7 +28,7 @@ dokku apps:create $1
 echo "4. Setting domain to app..."
 dokku domains:set $1 $2
 echo "5. Adding SSL to app..."
-dokku letsencrypt:true $1
+dokku letsencrypt:enable $1
 echo "6. Auto renew SSL...:"
 dokku letsencrypt:cron-job --add
 # only for node apps

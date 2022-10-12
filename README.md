@@ -15,3 +15,13 @@ wget -O init-dokku.sh https://raw.githubusercontent.com/AlexGoiaDev/dokku-script
 ``` 
 sh init-dokku.sh www.dominio.es email@letsencrypt.es
 ```
+### Crear una app node con dominio ssl
+1. Descargamos:
+```
+wget -O create-app.sh https://raw.githubusercontent.com/AlexGoiaDev/dokku-scripts/master/create-app.sh
+```
+
+2. Ejecutamos:
+```
+sh create-app.sh nombre_de_la_app www.dominio.es
+```

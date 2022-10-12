@@ -6,6 +6,7 @@ Scripts para agilizar la creación de aplicaciones con dokku.
 ## Ubuntu
 ### Instalar dokkku con configuración básica 
 Para ello usamos el script init-dokku.sh
-> wget -O init-dokku.sh https://raw.githubusercontent.com/AlexGoiaDev/dokku-scripts/master/init-dokku.sh
-
-> sh init-dokku.sh www.dominio.es email@letsencrypt.es
+``` 
+wget -O init-dokku.sh https://raw.githubusercontent.com/AlexGoiaDev/dokku-scripts/master/init-dokku.sh
+sh init-dokku.sh www.dominio.es email@letsencrypt.es
+```
